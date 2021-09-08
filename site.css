@@ -8,6 +8,7 @@ body{
     text-align: center;
     font-size: 70px;
     letter-spacing: 5px;
+
   }
   .p1-title{
     margin-top: 20px;
@@ -22,32 +23,44 @@ body{
         overflow: hidden;
         width: 13em;
         animation: type 4s steps(60, end); 
-  }
-      @keyframes type{ 
-       from { width: 0; } }
-        
-       .leftsidep1{
-         margin-top: -380px;
-        display: grid;
-        width: 130px;
-        place-items: center;
-        border: 8px solid;
-        padding: 1rem;
-          color: crimson;
-          border-width: 10px;
-          border-image: repeating-radial-gradient(
-              circle at 10px,
-              turquoise,
-              pink 2px,
-              greenyellow 4px,
-              pink 2px
-            )
-            1;
-        }
-        .a2{
-          margin-top: 10px; }
-          .a3{
-            margin-top: 10px;
+      }
+      .p1-subline2{
+        color: silver;
+        animation: fadeIn 11s
+      }
+      @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}}
+        @keyframes type{ 
+          from { width: 0; } }
+          #b2{
+            background-image: url("./Assets/computer.jpg");
+          }
+          .contact{
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            text-align: left;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: white;
+          }
+          
+          #b3{
+            background-image: url("./Assets/vaca.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-size: 1.5em;
+          }
+          #b4{
+            background-image: url("./Assets/projectbg.jpg");
+          }
+          .about{
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            text-align: left;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: white;
           }
           .glow-on-hover {
             width: 220px;
@@ -108,11 +121,7 @@ body{
             50% { background-position: 400% 0; }
             100% { background-position: 0 0; }
         }
-        
-       /* animation: fadeIn 10s < goes in class
-        @keyframes fadeIn {
-          0% {opacity: 0;}
-          100% {opacity: 1;}} */
+    
 
 
 
